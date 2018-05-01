@@ -7,7 +7,7 @@ import { peopleReducer } from './people/people.reducer';
 
 const appReducer = combineReducers<IAppState>({
     counter: counterReducer,
-    people: counterReducer,
+    people: peopleReducer,
     router: routerReducer,
 });
 
