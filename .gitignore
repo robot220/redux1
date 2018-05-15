@@ -13,6 +13,3 @@ npm-debug.log
 
 # build
 dist/
-
-# configuration
-.env

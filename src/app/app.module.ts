@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgReduxModule } from '@angular-redux/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '../store/store.module';
@@ -18,6 +19,7 @@ import { SharedModule } from '../shared';
         BrowserModule,
         HttpClientModule,
         BrowserAnimationsModule,
+        MDBBootstrapModule.forRoot(),
         AppRoutingModule,
         StoreModule,
         SharedModule,

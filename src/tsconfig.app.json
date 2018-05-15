@@ -2,14 +2,16 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
-    "module": "commonjs",
-    "types": [
-      "node",
-      "jest"
-    ]
+    "module": "es2015",
+    "types": []
   },
   "exclude": [
+    "src/test.ts",
     "**/*.spec.ts"
+  ],
+  "include": [ 
+    "**/*.ts", 
+    "../node_modules/angular-bootstrap-md/index.ts",
+    "../node_modules/angular-bootstrap-md/**/*.ts" 
   ]
 }

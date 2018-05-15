@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { createLogger } from 'redux-logger';
 import { DevToolsExtension } from '@angular-redux/store';
 import { Middleware, StoreEnhancer } from 'redux';
-import { autoRehydrate } from 'redux-persist';
+// import { autoRehydrate } from 'redux-persist';
 
 import { IAppState } from '../app.state.model';
 import { RootEpics } from '../epics/root.epic';
@@ -18,7 +18,7 @@ export class MiddlewaresProvider {
         private devTools: DevToolsExtension,
         private rootEpics: RootEpics) {
 
-        this.enhancers.push(autoRehydrate({ log: !environment.production }));
+        // this.enhancers.push(autoRehydrate({ log: !environment.production }));
 
         if (!environment.production) {
             this.middlewares.push(

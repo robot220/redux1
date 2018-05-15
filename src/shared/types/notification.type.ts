@@ -3,7 +3,7 @@ export const notificationTypes = {
     warning: 'warning',
     negative: 'danger',
 };
-export const notificationsDefaultTimer: number = 5000;
+export const notificationsDefaultTimer = 5000;
 export interface INotification {
     id?: string;
     type: string; // 'info', 'warning', 'danger'
